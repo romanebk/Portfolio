@@ -25,6 +25,6 @@ Plateforme de jeux dynamique avec plugins .so partagés. 3 jeux (Snake, Nibbler,
 - Fonctionnalité principale 2
 - Fonctionnalité principale 3
 
-## Captures d'écran
+## Binaire
 
-> Des screenshots seront ajoutés prochainement.
+<a download href="/binaries/arcade" class="inline-block px-3 py-1.5 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline text-sm font-medium hover:brightness-110 transition-all">⬇ Telecharger le binaire Arcade</a>
