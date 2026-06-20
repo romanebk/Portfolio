@@ -1,34 +1,42 @@
 import nodemailer from 'nodemailer';
 
-export async function POST({ request }) {
+export default async function handler(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+
+  if (req.method !== 'POST') {
+    res.setHeader('Allow', 'POST');
+    res.statusCode = 405;
+    return res.end(JSON.stringify({ error: 'Method Not Allowed' }));
+  }
+
   try {
-    const formData = await request.formData();
-    const name = formData.get('name') || '';
-    const email = formData.get('email') || '';
-    const subject = formData.get('subject') || '';
-    const message = formData.get('message') || '';
+    let body = '';
+    await new Promise((resolve) => {
+      req.on('data', (chunk) => { body += chunk; });
+      req.on('end', resolve);
+    });
+
+    const { name, email, subject, message } = JSON.parse(body);
 
     if (!name || !email || !message) {
-      return new Response(JSON.stringify({ error: 'Champs obligatoires manquants' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      res.statusCode = 400;
+      return res.end(JSON.stringify({ error: 'Champs obligatoires manquants' }));
     }
 
     const transporter = nodemailer.createTransport({
-      host: import.meta.env.SMTP_HOST || 'smtp.gmail.com',
-      port: parseInt(import.meta.env.SMTP_PORT || '587'),
+      host: process.env.SMTP_HOST || 'smtp.gmail.com',
+      port: parseInt(process.env.SMTP_PORT || '587'),
       secure: false,
       auth: {
-        user: import.meta.env.SMTP_USER,
-        pass: import.meta.env.SMTP_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: `"${name}" <${import.meta.env.SMTP_USER}>`,
+      from: `"${name}" <${process.env.SMTP_USER}>`,
       replyTo: email,
-      to: import.meta.env.CONTACT_EMAIL || import.meta.env.SMTP_USER,
+      to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
       subject: `[Portfolio] ${subject || 'Nouveau message'}`,
       html: `
         <h2>Nouveau message depuis le portfolio</h2>
@@ -40,15 +48,11 @@ export async function POST({ request }) {
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    res.statusCode = 200;
+    return res.end(JSON.stringify({ success: true }));
   } catch (err) {
     console.error(err);
-    return new Response(JSON.stringify({ error: 'Erreur lors de l\'envoi' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    res.statusCode = 500;
+    return res.end(JSON.stringify({ error: "Erreur lors de l'envoi" }));
   }
 }
