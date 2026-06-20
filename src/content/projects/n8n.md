@@ -19,8 +19,8 @@ Plateforme d'automatisation complète construite avec **n8n**, **PostgreSQL** et
 ### 1. Chat Agent
 Agent conversationnel avec mémoire et outils.
 
-[📥 Télécharger](/workflows/01_persona_chat_agent_fixed.json) (fixe)
-[📥 Télécharger](/workflows/01_persona_chat_agent_postgres_memory.json) (mémoire PostgreSQL)
+<a download href="/workflows/01_persona_chat_agent_fixed.json">telecharger</a> (fixe)
+<a download href="/workflows/01_persona_chat_agent_postgres_memory.json">telecharger</a> (memoire PostgreSQL)
 
 - **Persona Chat Trigger** — point d'entrée du chat
 - **Persona Agent** + **Groq Model** — agent IA avec LLM
@@ -28,7 +28,7 @@ Agent conversationnel avec mémoire et outils.
 - **Outils :** `send_login_code`, `verify_login_code`, `set_my_interests`, `set_my_schedule`, `get_my_settings`, `send_newsletter_now`, `unsubscribe_me`, `resubscribe_me`, `set_my_preferences`
 
 ### 2. Backend — Auth
-[📥 Télécharger](/workflows/02_persona_backend_auth_fixed.json)
+<a download href="/workflows/02_persona_backend_auth_fixed.json">telecharger</a>
 
 Gestion d'authentification par OTP :
 - **Route Action** — routage des requêtes
@@ -37,7 +37,7 @@ Gestion d'authentification par OTP :
 - **Increment Attempts** — limitation des tentatives
 
 ### 3. Backend — Profile
-[📥 Télécharger](/workflows/03_persona_backend_profile_fixed.json)
+<a download href="/workflows/03_persona_backend_profile_fixed.json">telecharger</a>
 
 Gestion complète du profil utilisateur :
 - **Resolve Session** + **Check Auth**
@@ -47,7 +47,7 @@ Gestion complète du profil utilisateur :
 - **Update Preferences**
 
 ### 4. Newsletter Builder
-[📥 Télécharger](/workflows/04_persona_newsletter_builder_fixed.json)
+<a download href="/workflows/04_persona_newsletter_builder_fixed.json">telecharger</a>
 
 Génération automatique de newsletters :
 - **Build Feed URLs** → **Fetch RSS** → **Select & Rank**
@@ -55,7 +55,7 @@ Génération automatique de newsletters :
 - **Build Email Body** → **Send Newsletter**
 
 ### 5. Scheduler
-[📥 Télécharger](/workflows/05_persona_scheduler_fixed.json)
+<a download href="/workflows/05_persona_scheduler_fixed.json">telecharger</a>
 
 Planification horaire :
 - **Every Hour** → **Get Active Users** → **Filter Due Users** → **Send To Each User**
