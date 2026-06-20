@@ -2,12 +2,29 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				heading: ['Space Grotesk', 'sans-serif'],
+				body: ['Inter', 'sans-serif'],
+			},
+		},
 	},
-	plugins: [require("@tailwindcss/typography"),require("daisyui")],
+	plugins: [require("@tailwindcss/typography"), require("daisyui")],
 	daisyui: {
-		themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
-		darkTheme: "dark", // name of one of the included themes for dark mode
-		logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
-	  }
+		themes: [
+			{
+				night: {
+					...require("daisyui/src/theming/themes").night,
+					primary: "#00f0ff",
+					"primary-content": "#001a1e",
+					secondary: "#ff00e5",
+					"secondary-content": "#1a0017",
+					accent: "#8b5cf6",
+					"accent-content": "#0f0524",
+				},
+			},
+		],
+		darkTheme: "night",
+		logs: false,
+	},
 }

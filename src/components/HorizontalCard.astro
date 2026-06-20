@@ -4,34 +4,34 @@ import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
-<div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%] reveal"
->
+<div class="rounded-xl glass glass-hover transition-all duration-300 reveal overflow-hidden group">
   <a href={url} target={target}>
-    <div class="hero-content flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row">
       {
         img && (
-          <Image
-            src={img}
-            width={750}
-            height={422}
-            format="webp"
-            alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
-          />
+          <div class="md:w-[13rem] shrink-0 overflow-hidden">
+            <Image
+              src={img}
+              width={750}
+              height={422}
+              format="webp"
+              alt={title}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
         )
       }
-      <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+      <div class="p-5 grow flex flex-col justify-center">
+        <h3 class="text-xl font-heading font-bold group-hover:gradient-text transition-all duration-300">
           {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
-        </h1>
-        <p class="py-1 text-1xl">{desc}</p>
-        <div class="card-actions justify-end">
+          {badge && <span class="badge badge-secondary mx-2 border-0 bg-secondary/20 text-secondary font-medium">{badge}</span>}
+        </h3>
+        <p class="py-2 text-base text-base-content/60 font-body leading-relaxed">{desc}</p>
+        <div class="flex gap-2 mt-1">
           {
             tags &&
               tags.map((tag) => (
-                <a href={`${tag_url}/${tag}`} class="badge badge-outline">
+                <a href={`${tag_url}/${tag}`} class="badge badge-outline border-base-content/20 text-base-content/50 text-xs">
                   {tag}
                 </a>
               ))

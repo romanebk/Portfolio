@@ -4,74 +4,80 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Contact" sideBarActiveItemID="contact">
   <div class="reveal reveal-delay-1">
-    <div class="text-3xl w-full font-bold mb-5">Contact</div>
-    <p class="text-lg mb-8">Une question, un projet ? N'hésite pas à me contacter.</p>
+    <div class="text-3xl w-full font-heading font-bold mb-5">Contact</div>
+    <p class="text-lg mb-8 font-body text-base-content/60">Une question, un projet ? N'hésite pas à me contacter.</p>
   </div>
 
   <div class="flex flex-col md:flex-row gap-8">
     <div class="md:w-1/2 reveal reveal-delay-2">
-      <div class="bg-base-200 rounded-lg p-6">
-        <h3 class="text-xl font-bold mb-4">Mes coordonnées</h3>
+      <div class="glass rounded-xl p-6">
+        <h3 class="text-xl font-heading font-bold mb-6">Mes coordonnées</h3>
 
-        <div class="flex items-center gap-3 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-lg bg-[rgba(0,240,255,0.1)] flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
           <div>
-            <p class="font-semibold">Email</p>
-            <a href="mailto:r.b.arielbokobeni@gmail.com" class="link link-hover">r.b.arielbokobeni@gmail.com</a>
+            <p class="font-semibold font-heading text-sm text-base-content/40">Email</p>
+            <a href="mailto:r.b.arielbokobeni@gmail.com" class="link link-hover font-body">r.b.arielbokobeni@gmail.com</a>
           </div>
         </div>
 
-        <div class="flex items-center gap-3 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-lg bg-[rgba(139,92,246,0.1)] flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
           <div>
-            <p class="font-semibold">Localisation</p>
-            <p>Cotonou, Bénin</p>
+            <p class="font-semibold font-heading text-sm text-base-content/40">Localisation</p>
+            <p class="font-body">Cotonou, Bénin</p>
           </div>
         </div>
 
         <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary"><path d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+          <div class="w-10 h-10 rounded-lg bg-[rgba(255,0,229,0.1)] flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ff00e5"><path d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+          </div>
           <div>
-            <p class="font-semibold">GitHub</p>
-            <a href="https://github.com/romanebk" target="_blank" class="link link-hover">github.com/romanebk</a>
+            <p class="font-semibold font-heading text-sm text-base-content/40">GitHub</p>
+            <a href="https://github.com/romanebk" target="_blank" class="link link-hover font-body">github.com/romanebk</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="md:w-1/2 reveal reveal-delay-3">
-      <form action="mailto:r.b.arielbokobeni@gmail.com" method="post" enctype="text/plain" class="bg-base-200 rounded-lg p-6">
-        <h3 class="text-xl font-bold mb-4">Envoyer un message</h3>
+      <form action="mailto:r.b.arielbokobeni@gmail.com" method="post" enctype="text/plain" class="glass rounded-xl p-6">
+        <h3 class="text-xl font-heading font-bold mb-6">Envoyer un message</h3>
 
         <div class="form-control mb-4">
           <label class="label" for="name">
-            <span class="label-text">Nom</span>
+            <span class="label-text font-body text-base-content/60">Nom</span>
           </label>
-          <input type="text" name="name" id="name" placeholder="Ton nom" class="input input-bordered w-full" required />
+          <input type="text" name="name" id="name" placeholder="Ton nom" class="input input-bordered bg-base-200/50 border-base-content/10 focus:border-[#00f0ff] transition-colors w-full" required />
         </div>
 
         <div class="form-control mb-4">
           <label class="label" for="email">
-            <span class="label-text">Email</span>
+            <span class="label-text font-body text-base-content/60">Email</span>
           </label>
-          <input type="email" name="email" id="email" placeholder="ton@email.com" class="input input-bordered w-full" required />
+          <input type="email" name="email" id="email" placeholder="ton@email.com" class="input input-bordered bg-base-200/50 border-base-content/10 focus:border-[#00f0ff] transition-colors w-full" required />
         </div>
 
         <div class="form-control mb-4">
           <label class="label" for="subject">
-            <span class="label-text">Sujet</span>
+            <span class="label-text font-body text-base-content/60">Sujet</span>
           </label>
-          <input type="text" name="subject" id="subject" placeholder="Sujet de ton message" class="input input-bordered w-full" />
+          <input type="text" name="subject" id="subject" placeholder="Sujet de ton message" class="input input-bordered bg-base-200/50 border-base-content/10 focus:border-[#00f0ff] transition-colors w-full" />
         </div>
 
         <div class="form-control mb-6">
           <label class="label" for="message">
-            <span class="label-text">Message</span>
+            <span class="label-text font-body text-base-content/60">Message</span>
           </label>
-          <textarea name="message" id="message" rows="5" placeholder="Ton message..." class="textarea textarea-bordered w-full" required></textarea>
+          <textarea name="message" id="message" rows="5" placeholder="Ton message..." class="textarea textarea-bordered bg-base-200/50 border-base-content/10 focus:border-[#00f0ff] transition-colors w-full" required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary w-full">Envoyer</button>
+        <button type="submit" class="btn btn-primary w-full rounded-lg font-heading font-medium">Envoyer</button>
       </form>
     </div>
   </div>
