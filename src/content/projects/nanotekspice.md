@@ -27,3 +27,8 @@ Simulateur de circuits numériques. Portes AND/OR/XOR/NOT/NAND/NOR, tristate, CL
 ## Captures d'écran
 
 > Des screenshots seront ajoutés prochainement.
+
+## Fichiers de circuit (.nts)
+
+<a download href="/projects/nanotekspice/4008_adder.nts" class="inline-block px-3 py-1.5 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline text-sm font-medium hover:brightness-110 transition-all">⬇ 4008_adder.nts</a>
+<a download href="/projects/nanotekspice/altered-counter.nts" class="inline-block px-3 py-1.5 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline text-sm font-medium hover:brightness-110 transition-all">⬇ altered-counter.nts</a>
