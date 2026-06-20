@@ -26,7 +26,7 @@ Simulateur de circuits numériques. Portes AND/OR/XOR/NOT/NAND/NOR, tristate, CL
 
 ## Captures d'écran
 
-> Des screenshots seront ajoutés prochainement.
+<img src="/projects/nanotekspice/op.png" alt="Circuit nanotekspice" class="rounded-xl mb-4" />
 
 ## Fichiers de circuit (.nts)
 
