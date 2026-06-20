@@ -1,15 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
+  <div class="pb-12 mt-5 reveal reveal-delay-1">
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Ariel BOKO</div>
     <div class="text-3xl py-3 font-bold">Développeur C++/C, Web, Rust, Python</div>
@@ -27,53 +22,61 @@ const last_posts = posts.slice(0, 3);
     </div>
   </div>
 
-  <div>
+  <div class="reveal reveal-delay-2">
     <div class="text-3xl w-full font-bold mb-2">Projets phares {"</>"}</div>
   </div>
 
-  <HorizontalCard
-    title="Arcade"
-    img="/post_img.webp"
-    desc="Plateforme de jeux dynamique avec plugins .so (Snake/Nibbler/Minesweeper), 3 affichages (NCurses/SDL2/SFML) - C++"
-    url="#"
-    badge="C++"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Raytracer"
-    img="/post_img.webp"
-    desc="Moteur de rendu 3D (sphères, plans, cylindres, cônes, lumières) avec multithreading, scènes .cfg - C++"
-    url="#"
-    badge="C++"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Startrek"
-    img="/post_img.webp"
-    desc="Apprentissage par renforcement (DQN) pour atterrissage lunaire - Python/PyTorch/Gymnasium"
-    url="#"
-    badge="AI"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="CTF Bug Bounty - ECorp"
-    img="/post_img.webp"
-    desc="11 challenges d'exploitation binaire : stack overflow, ASLR bypass, heap overflow, Use-After-Free - Python/C"
-    url="#"
-    badge="SEC"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Level Up RPG"
-    img="/post_img.webp"
-    desc="Jeu éducatif RPG React 19/Electron/TailwindCSS avec combats par défis (math, lecture, etc.)"
-    url="#"
-    badge="WEB"
-  />
-
-  <div class="mt-8 text-center">
-    <a href="/projects" class="btn btn-outline btn-lg">Voir tous les projets →</a>
+  <div class="reveal reveal-delay-1">
+    <HorizontalCard
+      title="Arcade"
+      img="/post_img.webp"
+      desc="Plateforme de jeux dynamique avec plugins .so (Snake/Nibbler/Minesweeper), 3 affichages (NCurses/SDL2/SFML) - C++"
+      url="#"
+      badge="C++"
+    />
+  </div>
+  <div class="divider my-0" />
+  <div class="reveal reveal-delay-2">
+    <HorizontalCard
+      title="Raytracer"
+      img="/post_img.webp"
+      desc="Moteur de rendu 3D (sphères, plans, cylindres, cônes, lumières) avec multithreading, scènes .cfg - C++"
+      url="#"
+      badge="C++"
+    />
+  </div>
+  <div class="divider my-0" />
+  <div class="reveal reveal-delay-3">
+    <HorizontalCard
+      title="Startrek"
+      img="/post_img.webp"
+      desc="Apprentissage par renforcement (DQN) pour atterrissage lunaire - Python/PyTorch/Gymnasium"
+      url="#"
+      badge="AI"
+    />
+  </div>
+  <div class="divider my-0" />
+  <div class="reveal reveal-delay-1">
+    <HorizontalCard
+      title="CTF Bug Bounty - ECorp"
+      img="/post_img.webp"
+      desc="11 challenges d'exploitation binaire : stack overflow, ASLR bypass, heap overflow, Use-After-Free - Python/C"
+      url="#"
+      badge="SEC"
+    />
+  </div>
+  <div class="divider my-0" />
+  <div class="reveal reveal-delay-2">
+    <HorizontalCard
+      title="Level Up RPG"
+      img="/post_img.webp"
+      desc="Jeu éducatif RPG React 19/Electron/TailwindCSS avec combats par défis (math, lecture, etc.)"
+      url="#"
+      badge="WEB"
+    />
   </div>
 
-
+  <div class="mt-8 text-center reveal reveal-delay-3">
+    <a href="/projects" class="btn btn-outline btn-lg">Voir tous les projets →</a>
+  </div>
 </BaseLayout>
