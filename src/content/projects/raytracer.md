@@ -26,4 +26,7 @@ Moteur de rendu 3D supportant sphères, plans, cylindres, cônes et lumières. M
 
 ## Captures d'écran
 
-> Des screenshots seront ajoutés prochainement.
+<img src="/projects/raytracer/a.png" alt="Rendu 1" class="rounded-xl mb-4" />
+<img src="/projects/raytracer/b.png" alt="Rendu 2" class="rounded-xl mb-4" />
+<img src="/projects/raytracer/c.png" alt="Rendu 3" class="rounded-xl mb-4" />
+<img src="/projects/raytracer/d.png" alt="Rendu 4" class="rounded-xl mb-4" />
