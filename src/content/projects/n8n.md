@@ -19,8 +19,8 @@ Plateforme d'automatisation complète construite avec **n8n**, **PostgreSQL** et
 ### 1. Chat Agent
 Agent conversationnel avec mémoire et outils.
 
-<a download href="/workflows/01_persona_chat_agent_fixed.json">⬇ Telecharger le workflow Chat Agent (fixe)</a>
-<a download href="/workflows/01_persona_chat_agent_postgres_memory.json">⬇ Telecharger le workflow Chat Agent (memoire PostgreSQL)</a>
+<a download href="/workflows/01_persona_chat_agent_fixed.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Chat Agent (fixe)</a>
+<a download href="/workflows/01_persona_chat_agent_postgres_memory.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Chat Agent (memoire PostgreSQL)</a>
 
 - **Persona Chat Trigger** — point d'entrée du chat
 - **Persona Agent** + **Groq Model** — agent IA avec LLM
@@ -28,7 +28,7 @@ Agent conversationnel avec mémoire et outils.
 - **Outils :** `send_login_code`, `verify_login_code`, `set_my_interests`, `set_my_schedule`, `get_my_settings`, `send_newsletter_now`, `unsubscribe_me`, `resubscribe_me`, `set_my_preferences`
 
 ### 2. Backend — Auth
-<a download href="/workflows/02_persona_backend_auth_fixed.json">⬇ Telecharger le workflow Backend Auth</a>
+<a download href="/workflows/02_persona_backend_auth_fixed.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Backend Auth</a>
 
 Gestion d'authentification par OTP :
 - **Route Action** — routage des requêtes
@@ -37,7 +37,7 @@ Gestion d'authentification par OTP :
 - **Increment Attempts** — limitation des tentatives
 
 ### 3. Backend — Profile
-<a download href="/workflows/03_persona_backend_profile_fixed.json">⬇ Telecharger le workflow Backend Profile</a>
+<a download href="/workflows/03_persona_backend_profile_fixed.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Backend Profile</a>
 
 Gestion complète du profil utilisateur :
 - **Resolve Session** + **Check Auth**
@@ -47,7 +47,7 @@ Gestion complète du profil utilisateur :
 - **Update Preferences**
 
 ### 4. Newsletter Builder
-<a download href="/workflows/04_persona_newsletter_builder_fixed.json">⬇ Telecharger le workflow Newsletter Builder</a>
+<a download href="/workflows/04_persona_newsletter_builder_fixed.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Newsletter Builder</a>
 
 Génération automatique de newsletters :
 - **Build Feed URLs** → **Fetch RSS** → **Select & Rank**
@@ -55,7 +55,7 @@ Génération automatique de newsletters :
 - **Build Email Body** → **Send Newsletter**
 
 ### 5. Scheduler
-<a download href="/workflows/05_persona_scheduler_fixed.json">⬇ Telecharger le workflow Scheduler</a>
+<a download href="/workflows/05_persona_scheduler_fixed.json" class="inline-block px-4 py-2 my-1 rounded-lg bg-gradient-to-r from-cyan-500/10 to-fuchsia-500/10 border border-cyan-500/30 text-cyan-400 no-underline font-medium hover:brightness-110 transition-all">⬇ Telecharger le workflow Scheduler</a>
 
 Planification horaire :
 - **Every Hour** → **Get Active Users** → **Filter Due Users** → **Send To Each User**
