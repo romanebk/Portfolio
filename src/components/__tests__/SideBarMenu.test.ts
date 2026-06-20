@@ -6,8 +6,9 @@ describe('SideBarMenu component', () => {
       <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
       <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li>
       <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li>
+      <li><a class="py-3 text-base" id="contact" href="/contact">Contact</a></li>
       <li>
-        <a class="py-3 text-base" href="mailto:ariel.boko@epitech.eu" target="_blank" referrerpolicy="no-referrer-when-downgrade">Contact</a>
+        <a class="py-3 text-base" href="mailto:r.b.arielbokobeni@gmail.com" target="_blank" referrerpolicy="no-referrer-when-downgrade">Email</a>
       </li>
     </ul>
   `
@@ -17,11 +18,12 @@ describe('SideBarMenu component', () => {
     container.innerHTML = sidebarMenuHTML
 
     const items = container.querySelectorAll('li')
-    expect(items.length).toBe(4)
+    expect(items.length).toBe(5)
     expect(container.querySelector('#home')?.textContent).toBe('Home')
     expect(container.querySelector('#projects')?.textContent).toBe('Projects')
     expect(container.querySelector('#cv')?.textContent).toBe('CV')
-    expect(container.querySelector('a[href*="mailto"]')?.textContent).toBe('Contact')
+    expect(container.querySelector('#contact')?.textContent).toBe('Contact')
+    expect(container.querySelector('a[href*="mailto"]')?.textContent).toBe('Email')
   })
 
   it('has correct links for each menu item', () => {
@@ -31,15 +33,15 @@ describe('SideBarMenu component', () => {
     expect(container.querySelector('#home')).toHaveAttribute('href', '/')
     expect(container.querySelector('#projects')).toHaveAttribute('href', '/projects')
     expect(container.querySelector('#cv')).toHaveAttribute('href', '/cv')
+    expect(container.querySelector('#contact')).toHaveAttribute('href', '/contact')
   })
 
-  it('contact link has mailto href and opens in new tab', () => {
+  it('email link has correct mailto href', () => {
     const container = document.createElement('div')
     container.innerHTML = sidebarMenuHTML
 
-    const contactLink = container.querySelector('a[href*="mailto"]')
-    expect(contactLink).toHaveAttribute('href', 'mailto:ariel.boko@epitech.eu')
-    expect(contactLink).toHaveAttribute('target', '_blank')
-    expect(contactLink).toHaveAttribute('referrerpolicy', 'no-referrer-when-downgrade')
+    const emailLink = container.querySelector('a[href*="mailto"]')
+    expect(emailLink).toHaveAttribute('href', 'mailto:r.b.arielbokobeni@gmail.com')
+    expect(emailLink).toHaveAttribute('target', '_blank')
   })
 })
