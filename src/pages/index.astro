@@ -5,74 +5,75 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Ariel BOKO</div>
+    <div class="text-3xl py-3 font-bold">Développeur C++/C, Web, Rust, Python</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Passionné par la cybersécurité, l'IA et le développement logiciel.
+        Je relève tous les défis techniques, des algorithmes bas niveau aux architectures web modernes.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="/projects" target="_self">Voir mes projets</a>
+      <a href="/cv" target="_self" class="btn btn-outline ml-5">
+        Mon CV
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Projets phares {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Arcade"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Plateforme de jeux dynamique avec plugins .so (Snake/Nibbler/Minesweeper), 3 affichages (NCurses/SDL2/SFML) - C++"
     url="#"
-    badge="NEW"
+    badge="C++"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="Raytracer"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Moteur de rendu 3D (sphères, plans, cylindres, cônes, lumières) avec multithreading, scènes .cfg - C++"
     url="#"
+    badge="C++"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
+    title="Startrek"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Apprentissage par renforcement (DQN) pour atterrissage lunaire - Python/PyTorch/Gymnasium"
     url="#"
-    badge="FOSS"
+    badge="AI"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="CTF Bug Bounty - ECorp"
+    img="/post_img.webp"
+    desc="11 challenges d'exploitation binaire : stack overflow, ASLR bypass, heap overflow, Use-After-Free - Python/C"
+    url="#"
+    badge="SEC"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Level Up RPG"
+    img="/post_img.webp"
+    desc="Jeu éducatif RPG React 19/Electron/TailwindCSS avec combats par défis (math, lecture, etc.)"
+    url="#"
+    badge="WEB"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  <div class="mt-8 text-center">
+    <a href="/projects" class="btn btn-outline btn-lg">Voir tous les projets →</a>
   </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+
 </BaseLayout>
