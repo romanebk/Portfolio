@@ -1,6 +1,6 @@
 ---
 title: "StoneAnalysis"
-description: "Description détaillée de stoneanalysis."
+description: "Analyse fréquentielle audio avec FFT et stéganographie dans fichiers WAV."
 heroImage: "/projects/stoneanalysis.webp"
 badge: "C++/DSP"
 category: "MATH"
@@ -10,11 +10,14 @@ tags: ["C++", "FFT", "DSP", "Steganography"]
 
 ## À propos
 
-Description complète de **StoneAnalysis**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Analyse fréquentielle audio avec FFT et stéganographie dans fichiers WAV.
 
 ## Technologies utilisées
 
-- C++\n- FFT\n- DSP\n- Steganography
+- C++
+- FFT
+- DSP
+- Steganography
 
 ## Fonctionnalités
 

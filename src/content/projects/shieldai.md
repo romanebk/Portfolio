@@ -1,20 +1,23 @@
 ---
 title: "ShieldAI"
-description: "Description détaillée de shieldai."
+description: "Pitch deck startup — cybersécurité IA pour PME africaines."
 heroImage: "/projects/shieldai.webp"
 badge: "Startup"
 category: "Autres"
 github: "https://github.com/romanebk"
-tags: ["Startup", "Cybersecurity", "AI"]
+tags: ["Startup", "Cybersecurity", "AI", "Africa"]
 ---
 
 ## À propos
 
-Description complète de **ShieldAI**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Pitch deck startup — cybersécurité IA pour PME africaines.
 
 ## Technologies utilisées
 
-- Startup\n- Cybersecurity\n- AI
+- Startup
+- Cybersecurity
+- AI
+- Africa
 
 ## Fonctionnalités
 

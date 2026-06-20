@@ -1,6 +1,6 @@
 ---
 title: "myFTP"
-description: "Description détaillée de myftp."
+description: "Serveur FTP conforme RFC 959 avec poll et fork."
 heroImage: "/projects/myftp.webp"
 badge: "C/Réseau"
 category: "NTW"
@@ -10,11 +10,14 @@ tags: ["C", "FTP", "RFC 959", "Network"]
 
 ## À propos
 
-Description complète de **myFTP**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Serveur FTP conforme RFC 959 avec poll et fork.
 
 ## Technologies utilisées
 
-- C\n- FTP\n- RFC 959\n- Network
+- C
+- FTP
+- RFC 959
+- Network
 
 ## Fonctionnalités
 

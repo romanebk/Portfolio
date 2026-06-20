@@ -1,6 +1,6 @@
 ---
 title: "Raytracer"
-description: "Description détaillée de raytracer."
+description: "Moteur de rendu 3D supportant sphères, plans, cylindres, cônes et lumières. Multithreading, parsing de scènes .cfg, sauvegarde BMP."
 heroImage: "/projects/raytracer.webp"
 badge: "C++"
 category: "OOP"
@@ -10,11 +10,13 @@ tags: ["C++", "3D", "Multithreading"]
 
 ## À propos
 
-Description complète de **Raytracer**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Moteur de rendu 3D supportant sphères, plans, cylindres, cônes et lumières. Multithreading, parsing de scènes .cfg, sauvegarde BMP.
 
 ## Technologies utilisées
 
-- C++\n- 3D\n- Multithreading
+- C++
+- 3D
+- Multithreading
 
 ## Fonctionnalités
 

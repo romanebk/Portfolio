@@ -1,6 +1,6 @@
 ---
 title: "myTeams"
-description: "Description détaillée de myteams."
+description: "Plateforme collaborative Teams-like avec protocole JSON/TCP."
 heroImage: "/projects/myteams.webp"
 badge: "C/Réseau"
 category: "NTW"
@@ -10,11 +10,14 @@ tags: ["C", "TCP", "JSON", "Network"]
 
 ## À propos
 
-Description complète de **myTeams**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Plateforme collaborative Teams-like avec protocole JSON/TCP.
 
 ## Technologies utilisées
 
-- C\n- TCP\n- JSON\n- Network
+- C
+- TCP
+- JSON
+- Network
 
 ## Fonctionnalités
 

@@ -1,20 +1,23 @@
 ---
 title: "Codename"
-description: "Description détaillée de codename."
+description: "Prompt engineering : attaque et défense de LLM avec granite3.1-moe via Ollama."
 heroImage: "/projects/codename.webp"
 badge: "LLM"
 category: "AIA"
 github: "https://github.com/romanebk"
-tags: ["LLM", "Prompt Engineering", "Ollama"]
+tags: ["LLM", "Prompt Engineering", "Ollama", "Security"]
 ---
 
 ## À propos
 
-Description complète de **Codename**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Prompt engineering : attaque et défense de LLM avec granite3.1-moe via Ollama.
 
 ## Technologies utilisées
 
-- LLM\n- Prompt Engineering\n- Ollama
+- LLM
+- Prompt Engineering
+- Ollama
+- Security
 
 ## Fonctionnalités
 

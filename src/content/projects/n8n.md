@@ -1,20 +1,23 @@
 ---
 title: "Persona (n8n)"
-description: "Description détaillée de persona (n8n)."
+description: "Plateforme d automatisation n8n avec PostgreSQL et Mistral AI."
 heroImage: "/projects/n8n.webp"
 badge: "n8n/IA"
 category: "AIA"
 github: "https://github.com/romanebk"
-tags: ["n8n", "Automation", "Mistral AI"]
+tags: ["n8n", "Automation", "Mistral AI", "PostgreSQL"]
 ---
 
 ## À propos
 
-Description complète de **Persona (n8n)**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Plateforme d automatisation n8n avec PostgreSQL et Mistral AI.
 
 ## Technologies utilisées
 
-- n8n\n- Automation\n- Mistral AI
+- n8n
+- Automation
+- Mistral AI
+- PostgreSQL
 
 ## Fonctionnalités
 

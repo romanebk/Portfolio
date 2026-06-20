@@ -1,6 +1,6 @@
 ---
 title: "Startrek"
-description: "Description détaillée de startrek."
+description: "Apprentissage par renforcement (DQN) pour atterrissage lunaire avec PyTorch et Gymnasium."
 heroImage: "/projects/startrek.webp"
 badge: "Python/PyTorch"
 category: "AIA"
@@ -10,11 +10,14 @@ tags: ["Python", "PyTorch", "DQN", "Reinforcement Learning"]
 
 ## À propos
 
-Description complète de **Startrek**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Apprentissage par renforcement (DQN) pour atterrissage lunaire avec PyTorch et Gymnasium.
 
 ## Technologies utilisées
 
-- Python\n- PyTorch\n- DQN\n- Reinforcement Learning
+- Python
+- PyTorch
+- DQN
+- Reinforcement Learning
 
 ## Fonctionnalités
 

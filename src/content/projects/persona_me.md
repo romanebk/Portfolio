@@ -1,6 +1,6 @@
 ---
 title: "persona_me"
-description: "Description détaillée de persona_me."
+description: "Agrégateur de news personnalisé avec chatbot Mistral AI."
 heroImage: "/projects/persona_me.webp"
 badge: "Fullstack"
 category: "AIA"
@@ -10,11 +10,14 @@ tags: ["Fullstack", "RSS", "GDPR", "Mistral AI"]
 
 ## À propos
 
-Description complète de **persona_me**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Agrégateur de news personnalisé avec chatbot Mistral AI.
 
 ## Technologies utilisées
 
-- Fullstack\n- RSS\n- GDPR\n- Mistral AI
+- Fullstack
+- RSS
+- GDPR
+- Mistral AI
 
 ## Fonctionnalités
 

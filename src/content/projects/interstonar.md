@@ -1,6 +1,6 @@
 ---
 title: "Interstonar"
-description: "Description détaillée de interstonar."
+description: "Simulation 3D de trajectoire spatiale avec ray marching SDF."
 heroImage: "/projects/interstonar.webp"
 badge: "C++/3D"
 category: "MATH"
@@ -10,11 +10,14 @@ tags: ["C++", "3D", "Ray Marching", "Physics"]
 
 ## À propos
 
-Description complète de **Interstonar**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Simulation 3D de trajectoire spatiale avec ray marching SDF.
 
 ## Technologies utilisées
 
-- C++\n- 3D\n- Ray Marching\n- Physics
+- C++
+- 3D
+- Ray Marching
+- Physics
 
 ## Fonctionnalités
 

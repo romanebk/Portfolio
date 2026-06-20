@@ -1,6 +1,6 @@
 ---
 title: "Nanotekspice"
-description: "Description détaillée de nanotekspice."
+description: "Simulateur de circuits numériques. Portes AND/OR/XOR/NOT/NAND/NOR, tristate, CLI interactif."
 heroImage: "/projects/nanotekspice.webp"
 badge: "C++"
 category: "OOP"
@@ -10,11 +10,13 @@ tags: ["C++", "Digital Circuits", "Simulation"]
 
 ## À propos
 
-Description complète de **Nanotekspice**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Simulateur de circuits numériques. Portes AND/OR/XOR/NOT/NAND/NOR, tristate, CLI interactif.
 
 ## Technologies utilisées
 
-- C++\n- Digital Circuits\n- Simulation
+- C++
+- Digital Circuits
+- Simulation
 
 ## Fonctionnalités
 

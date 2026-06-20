@@ -1,6 +1,6 @@
 ---
 title: "Panoramix"
-description: "Description détaillée de panoramix."
+description: "Simulation Astérix avec threads pthread, mutex et sémaphores."
 heroImage: "/projects/panoramix.webp"
 badge: "C/Threads"
 category: "CCP"
@@ -10,11 +10,14 @@ tags: ["C", "Threads", "Mutex", "Semaphores"]
 
 ## À propos
 
-Description complète de **Panoramix**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Simulation Astérix avec threads pthread, mutex et sémaphores.
 
 ## Technologies utilisées
 
-- C\n- Threads\n- Mutex\n- Semaphores
+- C
+- Threads
+- Mutex
+- Semaphores
 
 ## Fonctionnalités
 

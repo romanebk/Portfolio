@@ -1,6 +1,6 @@
 ---
 title: "Level Up RPG"
-description: "Description détaillée de level up rpg."
+description: "Jeu éducatif RPG avec React 19, Electron, TailwindCSS. Combats par défis pédagogiques."
 heroImage: "/projects/levelup.webp"
 badge: "React/Electron"
 category: "AIA"
@@ -10,11 +10,14 @@ tags: ["React", "Electron", "TailwindCSS", "Game"]
 
 ## À propos
 
-Description complète de **Level Up RPG**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Jeu éducatif RPG avec React 19, Electron, TailwindCSS. Combats par défis pédagogiques.
 
 ## Technologies utilisées
 
-- React\n- Electron\n- TailwindCSS\n- Game
+- React
+- Electron
+- TailwindCSS
+- Game
 
 ## Fonctionnalités
 

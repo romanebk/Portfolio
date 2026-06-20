@@ -1,6 +1,6 @@
 ---
 title: "Serveur TCP Chat"
-description: "Description détaillée de serveur tcp chat."
+description: "Serveur TCP chat en C avec poll(), gestion non-bloquante de multiples clients."
 heroImage: "/projects/chat.webp"
 badge: "C"
 category: "Autres"
@@ -10,11 +10,14 @@ tags: ["C", "TCP", "Poll", "Network"]
 
 ## À propos
 
-Description complète de **Serveur TCP Chat**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Serveur TCP chat en C avec poll(), gestion non-bloquante de multiples clients.
 
 ## Technologies utilisées
 
-- C\n- TCP\n- Poll\n- Network
+- C
+- TCP
+- Poll
+- Network
 
 ## Fonctionnalités
 

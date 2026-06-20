@@ -1,6 +1,6 @@
 ---
 title: "Arcade"
-description: "Description détaillée de arcade."
+description: "Plateforme de jeux dynamique avec plugins .so partagés. 3 jeux (Snake, Nibbler, Minesweeper), 3 bibliothèques graphiques (NCurses, SDL2, SFML). Architecture modulaire en C++."
 heroImage: "/projects/arcade.webp"
 badge: "C++"
 category: "OOP"
@@ -10,11 +10,14 @@ tags: ["C++", "NCurses", "SDL2", "SFML"]
 
 ## À propos
 
-Description complète de **Arcade**. Cette section sera enrichie avec plus de détails techniques, des images et des démos.
+Plateforme de jeux dynamique avec plugins .so partagés. 3 jeux (Snake, Nibbler, Minesweeper), 3 bibliothèques graphiques (NCurses, SDL2, SFML). Architecture modulaire en C++.
 
 ## Technologies utilisées
 
-- C++\n- NCurses\n- SDL2\n- SFML
+- C++
+- NCurses
+- SDL2
+- SFML
 
 ## Fonctionnalités
 
