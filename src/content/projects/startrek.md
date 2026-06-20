@@ -25,6 +25,29 @@ Apprentissage par renforcement (DQN) pour atterrissage lunaire avec PyTorch et G
 - Fonctionnalité principale 2
 - Fonctionnalité principale 3
 
-## Captures d'écran
+## Vidéos d'entraînement
 
-> Des screenshots seront ajoutés prochainement.
+<video controls width="100%" class="rounded-xl mb-4">
+  <source src="/videos/startrek/rl-video-episode-0.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la vidéo.
+</video>
+
+<video controls width="100%" class="rounded-xl mb-4">
+  <source src="/videos/startrek/rl-video-episode-1.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la vidéo.
+</video>
+
+<video controls width="100%" class="rounded-xl mb-4">
+  <source src="/videos/startrek/rl-video-episode-2.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la vidéo.
+</video>
+
+<video controls width="100%" class="rounded-xl mb-4">
+  <source src="/videos/startrek/rl-video-episode-3.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la vidéo.
+</video>
+
+<video controls width="100%" class="rounded-xl mb-4">
+  <source src="/videos/startrek/rl-video-episode-4.mp4" type="video/mp4" />
+  Votre navigateur ne supporte pas la vidéo.
+</video>
