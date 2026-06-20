@@ -1,30 +1,70 @@
 ---
 title: "Persona (n8n)"
-description: "Plateforme d automatisation n8n avec PostgreSQL et Mistral AI."
+description: "Plateforme d'automatisation n8n avec PostgreSQL et Mistral AI — chatbot agent, auth, profil, newsletter builder & scheduler."
 heroImage: "/projects/n8n.webp"
 badge: "n8n/IA"
 category: "AIA"
 github: "https://github.com/romanebk"
-tags: ["n8n", "Automation", "Mistral AI", "PostgreSQL"]
+tags: ["n8n", "Automation", "Mistral AI", "PostgreSQL", "Groq"]
 ---
 
 ## À propos
 
-Plateforme d automatisation n8n avec PostgreSQL et Mistral AI.
+Plateforme d'automatisation complète construite avec **n8n**, **PostgreSQL** et **Groq/Mistral AI**. Composée de 6 workflows interconnectés qui couvrent l'authentification, la gestion de profil, l'envoi de newsletters et la planification.
 
-## Technologies utilisées
+---
 
-- n8n
-- Automation
-- Mistral AI
-- PostgreSQL
+## Workflows
 
-## Fonctionnalités
+### 1. Chat Agent
+Agent conversationnel avec mémoire et outils.
 
-- Fonctionnalité principale 1
-- Fonctionnalité principale 2
-- Fonctionnalité principale 3
+[📥 Télécharger](workflows/01_persona_chat_agent_fixed.json) (fixe)
+[📥 Télécharger](workflows/01_persona_chat_agent_postgres_memory.json) (mémoire PostgreSQL)
 
-## Captures d'écran
+- **Persona Chat Trigger** — point d'entrée du chat
+- **Persona Agent** + **Groq Model** — agent IA avec LLM
+- **Session Memory** — mémoire de session
+- **Outils :** `send_login_code`, `verify_login_code`, `set_my_interests`, `set_my_schedule`, `get_my_settings`, `send_newsletter_now`, `unsubscribe_me`, `resubscribe_me`, `set_my_preferences`
 
-> Des screenshots seront ajoutés prochainement.
+### 2. Backend — Auth
+[📥 Télécharger](workflows/02_persona_backend_auth_fixed.json)
+
+Gestion d'authentification par OTP :
+- **Route Action** — routage des requêtes
+- **Generate OTP** / **Store OTP** / **Send OTP Email**
+- **Validate OTP** / **Mark Session Verified** / **Upsert User**
+- **Increment Attempts** — limitation des tentatives
+
+### 3. Backend — Profile
+[📥 Télécharger](workflows/03_persona_backend_profile_fixed.json)
+
+Gestion complète du profil utilisateur :
+- **Resolve Session** + **Check Auth**
+- **Get User** / **Update Interests** / **Update Schedule**
+- **Unsubscribe** / **Resubscribe**
+- **Call Newsletter Builder**
+- **Update Preferences**
+
+### 4. Newsletter Builder
+[📥 Télécharger](workflows/04_persona_newsletter_builder_fixed.json)
+
+Génération automatique de newsletters :
+- **Build Feed URLs** → **Fetch RSS** → **Select & Rank**
+- **Summarize Articles** + **Summarize Model (Groq)**
+- **Build Email Body** → **Send Newsletter**
+
+### 5. Scheduler
+[📥 Télécharger](workflows/05_persona_scheduler_fixed.json)
+
+Planification horaire :
+- **Every Hour** → **Get Active Users** → **Filter Due Users** → **Send To Each User**
+
+---
+
+## Technologies
+
+- **n8n** — orchestration des workflows
+- **Groq / Mistral AI** — LLM pour le chat et les résumés
+- **PostgreSQL** — base de données (sessions, profils, mémoires)
+- **SMTP** — envoi d'emails (OTP, newsletters)
