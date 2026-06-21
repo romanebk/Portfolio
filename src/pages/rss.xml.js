@@ -7,7 +7,7 @@ export async function get(context) {
   return rss({
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    site: import.meta.env.SITE,
+    site: context.site ?? import.meta.env.SITE,
     items: blog.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
