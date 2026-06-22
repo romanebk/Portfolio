@@ -10,7 +10,7 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
     <li><a class="py-3 text-base font-body rounded-lg transition-all duration-200 hover:bg-[rgba(0,240,255,0.05)] hover:text-[#00f0ff]" id="contact" href="/contact">Contact</a></li>
 </ul>
 
-<script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
+<script data-astro-rerun define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
 const activeItemElem = document.getElementById(sideBarActiveItemID);
 activeItemElem && activeItemElem.classList.add(activeClass);
 </script>
