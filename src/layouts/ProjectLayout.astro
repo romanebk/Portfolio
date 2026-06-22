@@ -3,7 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { Image } from "astro:assets";
 import type { ProjectSchema } from "../content/config";
 
-export interface Props extends ProjectSchema {
+export interface Props extends Omit<ProjectSchema, 'heroImage'> {
   heroImage?: string;
 }
 
