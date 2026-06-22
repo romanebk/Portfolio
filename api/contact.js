@@ -3,6 +3,12 @@ import nodemailer from 'nodemailer';
 export default async function handler(req, res) {
   res.setHeader('Content-Type', 'application/json');
 
+  if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+    console.error('SMTP credentials not configured');
+    res.statusCode = 500;
+    return res.end(JSON.stringify({ error: 'Service de messagerie non configuré' }));
+  }
+
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     res.statusCode = 405;
